@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Night Library</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=3fc068db5e687e247cb4d74d8b6373fe">
+</head>
+<body>
+    <div class="header" style='display:flex;height: auto;'>
+        <p>the night library 🌙</p>
+        <button id="addBook"> + New Book</button>
+    </div>
+    <div class="main" id="library" style='flex-grow: 1;'></div>
+    <overlay id='overlay'>
+        <form id="form" action>
+            <p id="cancel">X</p>
+            <p>Add a new book</p>
+            <input type="text" id="title" name="title" placeholder="Title"><br>
+            <input type="text" id="author" name="author" placeholder="Author Name"><br>
+            <input type="number" id="pages" name="pages" placeholder="Pages"><br>
+            <label> Have you read it?</label>
+            <input type="checkbox" id="read" name="read"><br>
+            <button type='submit' form='form' id='submitButton'>Submit</button>
+        </form>
+    </overlay>
+    <script type="module" src="main.js?v=3fc068db5e687e247cb4d74d8b6373fe"></script>
+</body>
+</html>
